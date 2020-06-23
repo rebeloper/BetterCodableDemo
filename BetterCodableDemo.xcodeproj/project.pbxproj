@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C9B1F39224A1B44F00454083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B1F39124A1B44F00454083 /* AppDelegate.swift */; };
 		C9B1F39424A1B44F00454083 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B1F39324A1B44F00454083 /* SceneDelegate.swift */; };
 		C9B1F39624A1B44F00454083 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B1F39524A1B44F00454083 /* ViewController.swift */; };
-		C9B1F39924A1B44F00454083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B1F39724A1B44F00454083 /* Main.storyboard */; };
 		C9B1F39B24A1B45100454083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B1F39A24A1B45100454083 /* Assets.xcassets */; };
 		C9B1F39E24A1B45100454083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B1F39C24A1B45100454083 /* LaunchScreen.storyboard */; };
+		C9B1F3A624A1B4C400454083 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B1F3A524A1B4C400454083 /* Data.swift */; };
+		C9B1F3A924A1C76900454083 /* SparkUI in Frameworks */ = {isa = PBXBuildFile; productRef = C9B1F3A824A1C76900454083 /* SparkUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,10 @@
 		C9B1F39124A1B44F00454083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9B1F39324A1B44F00454083 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9B1F39524A1B44F00454083 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9B1F39824A1B44F00454083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9B1F39A24A1B45100454083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B1F39D24A1B45100454083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9B1F39F24A1B45100454083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B1F3A524A1B4C400454083 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B1F3A924A1C76900454083 /* SparkUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +61,10 @@
 				C9B1F39124A1B44F00454083 /* AppDelegate.swift */,
 				C9B1F39324A1B44F00454083 /* SceneDelegate.swift */,
 				C9B1F39524A1B44F00454083 /* ViewController.swift */,
-				C9B1F39724A1B44F00454083 /* Main.storyboard */,
 				C9B1F39A24A1B45100454083 /* Assets.xcassets */,
 				C9B1F39C24A1B45100454083 /* LaunchScreen.storyboard */,
 				C9B1F39F24A1B45100454083 /* Info.plist */,
+				C9B1F3A524A1B4C400454083 /* Data.swift */,
 			);
 			path = BetterCodableDemo;
 			sourceTree = "<group>";
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = BetterCodableDemo;
+			packageProductDependencies = (
+				C9B1F3A824A1C76900454083 /* SparkUI */,
+			);
 			productName = BetterCodableDemo;
 			productReference = C9B1F38E24A1B44F00454083 /* BetterCodableDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C9B1F38524A1B44F00454083;
+			packageReferences = (
+				C9B1F3A724A1C76900454083 /* XCRemoteSwiftPackageReference "SparkUI" */,
+			);
 			productRefGroup = C9B1F38F24A1B44F00454083 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +135,6 @@
 			files = (
 				C9B1F39E24A1B45100454083 /* LaunchScreen.storyboard in Resources */,
 				C9B1F39B24A1B45100454083 /* Assets.xcassets in Resources */,
-				C9B1F39924A1B44F00454083 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,20 +148,13 @@
 				C9B1F39624A1B44F00454083 /* ViewController.swift in Sources */,
 				C9B1F39224A1B44F00454083 /* AppDelegate.swift in Sources */,
 				C9B1F39424A1B44F00454083 /* SceneDelegate.swift in Sources */,
+				C9B1F3A624A1B4C400454083 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9B1F39724A1B44F00454083 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9B1F39824A1B44F00454083 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9B1F39C24A1B45100454083 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -338,6 +338,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9B1F3A724A1C76900454083 /* XCRemoteSwiftPackageReference "SparkUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/SparkUI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.10.13;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9B1F3A824A1C76900454083 /* SparkUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9B1F3A724A1C76900454083 /* XCRemoteSwiftPackageReference "SparkUI" */;
+			productName = SparkUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9B1F38624A1B44F00454083 /* Project object */;
 }
